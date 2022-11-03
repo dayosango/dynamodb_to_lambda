@@ -20,4 +20,4 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: ${{ secrets.AWS_REGION }}
           function_name: dynamodb_to_lambda
-          source: lambda_function_dynamodb.py
+          source: lambda_function.py

@@ -14,11 +14,11 @@ def lambda_handler(event, context):
    s3_path = "data/" + filename
    objectpath = "https://" + s3bucket + ".s3.amazonaws.com/" + s3_path
    item = "{'Entry': {" + dt + "},'link': { " + s3_path + "}"
-   table.put_item(Item={'id': 2 ,
+   table.put_item(Item={'id': '2' ,
    'Age': 35,
    'Comment' : 'So interesting',
    'First Name' : 'Sarah',
    'Last Name' : 'Smith',
-   'Phone' : '7654987882',
+   'Phone' : 7654987882,
    'Postcode' : 'E8 3RF' })
    
